@@ -14,4 +14,5 @@ public class Listener extends ListenerAdapter {
     public void onReady(@Nonnull ReadyEvent event) {
     	LOGGER.info("{} is ready", event.getJDA().getSelfUser().getAsTag());
     }
+    
 }
