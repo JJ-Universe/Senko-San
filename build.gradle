@@ -12,6 +12,14 @@ sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     jcenter()
+    mavenCentral() // for transitive dependencies
+    // for JDA 4
+    maven {
+      name 'm2-dv8tion'
+      url 'https://m2.dv8tion.net/releases'
+    }
+    // For JDA-Chewtils
+    maven { url "https://m2.chew.pro/releases" }
 }
 
 dependencies {
