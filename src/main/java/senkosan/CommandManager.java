@@ -3,6 +3,7 @@ package senkosan;
 import senkosan.command.CommandContext;
 import senkosan.command.ICommand;
 import senkosan.command.commands.PingCommand;
+import senkosan.command.commands.invite.InviteCommand;
 
 import javax.annotation.Nullable;
 
@@ -18,6 +19,7 @@ public class CommandManager {
 
     public CommandManager() {
        addCommand(new PingCommand());
+       addCommand(new InviteCommand());
     }
 
     private void addCommand(ICommand cmd) {
